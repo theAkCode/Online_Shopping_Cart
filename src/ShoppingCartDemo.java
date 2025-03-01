@@ -11,7 +11,7 @@ public class ShoppingCartDemo {
             // Test 2: Validate price calculations
             System.out.println("Validating price calculations...");
             for (Product product : cart.getProducts()) {
-                System.out.println(product.getName() + " Calculated Price: $" + product.calculatePrice());
+                System.out.println(product.getName() + " Calculated Price: ₹" + product.calculatePrice());
             }
             System.out.println();
 
@@ -38,7 +38,7 @@ public class ShoppingCartDemo {
             // Test 5: Apply valid and invalid coupon codes
             System.out.println("Applying valid coupon...");
             cart.applyCoupon("SAVE10");
-            System.out.println("Coupon applied. Total after discount: $" + cart.calculateTotal());
+            System.out.println("Coupon applied. Total after discount: ₹" + cart.calculateTotal());
             System.out.println("Applying invalid coupon...");
             cart.applyCoupon("INVALIDCODE");
             System.out.println();
